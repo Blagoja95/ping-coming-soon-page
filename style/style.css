@@ -26,7 +26,7 @@ html{
 }
 
 body{
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--Gray);
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
@@ -43,11 +43,11 @@ body{
     width: 90%;
     flex-direction: column;
     justify-content: flex-start;
-    height: 80rem;
     background-image: url('../images/illustration-dashboard.png');
-    background-size: 40rem;
+    height: 85rem;
+    background-size: 35rem;
     background-repeat: no-repeat;
-    background-position: center 100%;
+    background-position: center 80%;
 }
 
 .main__logo-img{
@@ -74,11 +74,13 @@ body{
 .main__form{
     margin-top: 3rem;
     text-align: center;
+    width: 100%;
 }
 
 .main__input,
 .btn--main{
-    width: 40rem;
+    width: 100%;
+    max-width: 46rem;
     height: 7rem;
     margin-top: 2rem;
     border-radius: 100px;
@@ -97,7 +99,7 @@ body{
     background-color: var(--Blue);
     border: 1px solid var(--Pale-Blue);
 
-    box-shadow: 0px 5px 5px var(--Pale-Blue);
+    box-shadow: 0px 5px 5px 2px var(--Pale-Blue);
 }
 
 .btn--main:hover{
@@ -122,7 +124,6 @@ body{
 }
 
 .footer{
-    height: 40rem;
     flex-direction: column;
     gap: 3rem;
 }
@@ -133,7 +134,7 @@ body{
 
 .icons{
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .icon-link:link,
