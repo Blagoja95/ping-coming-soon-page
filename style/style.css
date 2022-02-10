@@ -1,0 +1,167 @@
+:root{
+    /* ### Primary */
+
+--Blue: hsl(223, 87%, 63%);
+
+/* ### Secondary */
+
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+
+/* ### Neutral */
+
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    color: var(--Gray);
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80rem;
+    background-image: url('../images/illustration-dashboard.png');
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+}
+
+.main__logo-img{
+    height: 2.2rem;
+    margin-top: 12rem;
+}
+
+.main__title{
+    font-size: 3.4rem;
+    font-weight: 300;
+    margin-top: 5rem;
+}
+
+.soon{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+
+.main__paragraph{
+    margin-top: 3rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.main__form{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.main__input,
+.btn--main{
+    width: 40rem;
+    height: 7rem;
+    margin-top: 2rem;
+    border-radius: 100px;
+    border: 2px solid var(--Pale-Blue);
+}
+
+.main__input{
+    padding-left: 4rem;
+    color: var(--Pale-Blue);
+    font-size: 1.8rem;
+}
+
+.btn--main{
+    font-weight: 700;
+    color: white;
+    background-color: var(--Blue);
+    border: 1px solid var(--Pale-Blue);
+
+    box-shadow: 0px 5px 5px var(--Pale-Blue);
+}
+
+.btn--main:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+/* error state */
+.main__label--error{
+    display: none;
+}
+
+.active .main__label--error{
+    display: block;
+    color: var(--Light-Red);
+    margin-top: 1rem;
+}
+
+.active .main__input{
+    border: 2px solid var(--Light-Red);
+    color: var(--Light-Red);
+}
+
+.footer{
+    height: 40rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer__paragraph{
+
+}
+
+.icons{
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.icon-link:link,
+.icon-link:visited{
+    text-decoration: none;
+    color: var(--Blue);
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    border: 1px solid var(--Pale-Blue)
+}
+
+.icon-link:hover,
+.icon-link:focus{
+    color: white;
+    background-color: var(--Blue);
+    border: 1px solid var(--Blue)
+}
+
+.facebook,
+.twitter,
+.instagram{
+    margin-bottom: .1rem;
+    font-size: 3rem;
+}
+
+.instagram{
+    margin-right: .1rem;
+
+}
