@@ -93,6 +93,10 @@ body{
     font-size: 1.8rem;
 }
 
+.main__input:focus{
+    color: var(--Very-Dark-Blue);
+}
+
 .btn--main{
     font-weight: 700;
     color: white;
