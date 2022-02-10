@@ -95,6 +95,7 @@ body{
 
 .main__input:focus{
     color: var(--Very-Dark-Blue);
+    border: 1px solid var(--Blue);
 }
 
 .btn--main{
@@ -125,6 +126,18 @@ body{
 .active .main__input{
     border: 2px solid var(--Light-Red);
     color: var(--Light-Red);
+}
+
+/* passed state */
+.passed .main__input{
+    border: 2px solid green;
+    color: green;
+}
+
+.passed .main__label--error{
+    margin-top: .5rem;
+    display: block;
+    color: green;
 }
 
 .footer{
